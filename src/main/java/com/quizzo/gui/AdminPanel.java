@@ -21,6 +21,13 @@ public class AdminPanel extends JPanel {
         addQuestionBtn.setBounds(300, 120, 200, 50);
         add(addQuestionBtn);
 
+       JButton viewResultsBtn = new JButton("View User Results");
+viewResultsBtn.setBounds(300, 190, 200, 50);
+add(viewResultsBtn);
+
+viewResultsBtn.addActionListener(e -> main.setViewResultsPanel());
+
+
         JButton exitBtn = new JButton("Home");
         exitBtn.setBounds(650, 20, 100, 30);
         exitBtn.addActionListener(e -> main.setWelcome());
@@ -28,5 +35,6 @@ public class AdminPanel extends JPanel {
 
 
         addQuestionBtn.addActionListener(e -> main.setAddQuestionPanel());
+          viewResultsBtn.addActionListener(e -> main.setViewResultsPanel());
     }
 }

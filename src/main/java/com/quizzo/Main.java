@@ -14,6 +14,7 @@ import com.quizzo.gui.QuizPanel;
 import com.quizzo.gui.QuizStartPanel;
 import com.quizzo.gui.Register;
 import com.quizzo.gui.ResultPanel;
+import com.quizzo.gui.ViewResultsPanel;
 import com.quizzo.gui.WelcomePanel;
 
 public class Main extends JFrame {
@@ -76,7 +77,7 @@ public class Main extends JFrame {
      */
     public void setUserDashboard(String email) {
         this.userEmail = email;
-        if ("admin@quizzo.com".equalsIgnoreCase(email)) {
+        if ("adminquizzo@gmail.com".equalsIgnoreCase(email)) {
             setAdminPanel();
         } else {
             setQuizStartPanel(email);
@@ -129,7 +130,7 @@ public class Main extends JFrame {
     }
 
     /**
-     * Show result summary
+     * Show result summary to user
      */
     public void showResult(int score, int total) {
         contentPanel.removeAll();
@@ -138,6 +139,27 @@ public class Main extends JFrame {
         repaint();
         revalidate();
     }
+    
+    /**
+     * Show all users' quiz results (admin)
+    
+    public void setViewResultsPanel() {
+        contentPanel.removeAll();
+        contentPanel.add(new ViewResultsPanel(this), "viewResults");
+        layout.show(contentPanel, "viewResults");
+        repaint();
+        revalidate();
+    } */
+
+   public void setViewResultsPanel() {
+    contentPanel.removeAll();
+    contentPanel.add(new ViewResultsPanel(this), "viewresults");
+    layout.show(contentPanel, "viewresults");
+    repaint();
+    revalidate();
+}
+
+
 
     public static void main(String[] args) {
         // Ensure MongoDB connection is initialized (optional)
