@@ -1,8 +1,10 @@
 package com.quizzo.gui;
 
-import com.quizzo.Main;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
-import javax.swing.*;
+import com.quizzo.Main;
 
 public class ResultPanel extends JPanel {
     public ResultPanel(Main main, int score, int total) {
@@ -21,7 +23,7 @@ public class ResultPanel extends JPanel {
         scoreLabel.setForeground(java.awt.Color.GREEN);
         add(scoreLabel);
 
-        JButton homeButton = new JButton("Back to Home");
+        JButton homeButton = new JButton("Log Out");
         homeButton.setBounds(280, 220, 150, 40);
         add(homeButton);
 

@@ -25,7 +25,7 @@ public class QuizStartPanel extends JPanel {
         JButton startQuizBtn = new JButton("Start Quiz");
         startQuizBtn.setBounds(270, 310, 150, 40);
         add(startQuizBtn);
-        JButton exitBtn = new JButton("Home");
+        JButton exitBtn = new JButton("Log Out");
 exitBtn.setBounds(650, 20, 100, 30);
 exitBtn.addActionListener(e -> main.setWelcome());
 add(exitBtn);

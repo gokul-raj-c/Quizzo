@@ -28,7 +28,7 @@ add(viewResultsBtn);
 viewResultsBtn.addActionListener(e -> main.setViewResultsPanel());
 
 
-        JButton exitBtn = new JButton("Home");
+        JButton exitBtn = new JButton("Log Out");
         exitBtn.setBounds(650, 20, 100, 30);
         exitBtn.addActionListener(e -> main.setWelcome());
         add(exitBtn);
