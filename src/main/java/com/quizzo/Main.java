@@ -15,7 +15,9 @@ import com.quizzo.gui.QuizStartPanel;
 import com.quizzo.gui.Register;
 import com.quizzo.gui.ResultPanel;
 import com.quizzo.gui.ViewResultsPanel;
+import com.quizzo.gui.ViewUsersPanel;
 import com.quizzo.gui.WelcomePanel;
+
 
 public class Main extends JFrame {
 
@@ -158,6 +160,15 @@ public class Main extends JFrame {
     repaint();
     revalidate();
 }
+
+public void setViewUsersPanel() {
+    contentPanel.removeAll();
+    contentPanel.add(new ViewUsersPanel(this), "viewusers");
+    layout.show(contentPanel, "viewusers");
+    repaint();
+    revalidate();
+}
+
 
 
 

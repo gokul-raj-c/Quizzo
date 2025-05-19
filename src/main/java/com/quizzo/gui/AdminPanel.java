@@ -27,6 +27,11 @@ add(viewResultsBtn);
 
 viewResultsBtn.addActionListener(e -> main.setViewResultsPanel());
 
+JButton viewUsersBtn = new JButton("View Users");
+viewUsersBtn.setBounds(300, 260, 200, 50); // Set position and size
+add(viewUsersBtn); // Add to panel
+
+viewUsersBtn.addActionListener(e -> main.setViewUsersPanel());
 
         JButton exitBtn = new JButton("Log Out");
         exitBtn.setBounds(650, 20, 100, 30);

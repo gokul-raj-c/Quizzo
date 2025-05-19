@@ -2,12 +2,14 @@ com\quizzo\service\UserService.class
 com\quizzo\service\QuizService.class
 com\quizzo\gui\AdminPanel.class
 com\quizzo\gui\ViewResultsPanel.class
+com\quizzo\gui\ViewUsersPanel.class
 com\quizzo\Main.class
 com\quizzo\db\MongoConnection.class
 com\quizzo\service\ResultService.class
 com\quizzo\service\AdminService.class
 com\quizzo\gui\QuizStartPanel.class
 com\quizzo\gui\WelcomePanel.class
+com\quizzo\service\UserService$UserInfo.class
 com\quizzo\service\ResultService$ResultWithUser.class
 com\quizzo\gui\Register.class
 com\quizzo\model\Result.class
